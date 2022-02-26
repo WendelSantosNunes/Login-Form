@@ -1,0 +1,159 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Global */
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Falta Explicar esse conteúdo*/
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* main */
+
+body {
+  background-color: var(--background);
+  color: var(--text-base);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 1000px;
+}
+
+#logo {
+  max-width: 115px;
+  margin: 40px 0 0 40px;
+}
+
+#section1 {
+  height: 100%;
+}
+
+#menu {
+  max-width: 572px;
+  margin: auto;
+  padding: 55px 119px;
+  background-color: var(--form-background);
+}
+
+#menu div {
+  display: flex;
+}
+
+#menu h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+#menu p {
+  font-family: 'Roboto', sans-serif;
+}
+
+form #e-mail,
+form #password {
+  color: #fff;
+}
+
+[data-input] {
+  border: 1px solid var(--primary-color);
+}
+
+#log-in {
+  max-width: 24px;
+  margin-right: 10px;
+}
+
+#menu h1 {
+  font-size: 24px;
+}
+
+#menu > p {
+  margin-top: 5px;
+}
+
+form {
+  margin-top: 27px;
+}
+
+#menu label {
+  display: block;
+  padding-bottom: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#menu label:nth-child(3) {
+  padding-top: 20px;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+form div {
+  border: 1px solid #868686;
+}
+
+#e-mail,
+#password {
+  background-color: var(--form-background);
+  padding: 14px 0 14px 5px;
+  border: none;
+}
+
+.icon {
+  max-width: 20px;
+  margin: 10px;
+}
+
+#salve-remember {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+#salve-remember div {
+  border: none;
+}
+
+#salve-remember div input {
+  border: none;
+  margin-right: 5px;
+}
+
+#login {
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 14px;
+  background-color: var(--primary-color);
+  border: none;
+}
