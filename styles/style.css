@@ -36,7 +36,6 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 1000px;
 }
 
 #logo {
@@ -50,6 +49,7 @@ main {
 
 #menu {
   max-width: 572px;
+  /* width: auto; */
   margin: auto;
   padding: 55px 119px;
   background-color: var(--form-background);
@@ -73,7 +73,7 @@ form #password {
   color: #fff;
 }
 
-[data-input] {
+.data-input {
   border: 1px solid var(--primary-color);
 }
 
@@ -105,6 +105,16 @@ form {
   padding-top: 20px;
 }
 
+#section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#section2 img {
+  max-height: 100vh;
+  height: auto;
+}
+
 input {
   font-family: 'Roboto', sans-serif;
 }
@@ -124,6 +134,7 @@ form div {
   background-color: var(--form-background);
   padding: 14px 0 14px 5px;
   border: none;
+  width: 100%;
 }
 
 .icon {
@@ -135,7 +146,7 @@ form div {
   border: none;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -143,6 +154,17 @@ form div {
 
 #salve-remember div {
   border: none;
+  display: flex;
+  align-items: center;
+}
+
+#salve-remember div label {
+  padding-bottom: 0;
+}
+
+#salve-remember a {
+  align-self: center;
+  font-size: 14px;
 }
 
 #salve-remember div input {
@@ -156,4 +178,39 @@ form div {
   margin-bottom: 14px;
   background-color: var(--primary-color);
   border: none;
+
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5%;
+}
+
+@media (max-width: 1070px) {
+  body main {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  #section2 {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  #menu {
+    padding: 30px;
+    width: 370px;
+  }
+}
+
+@media (max-height: 600.75px) {
+  body main {
+    margin: 20px 0 350px 0;
+  }
+
+  #menu {
+    margin-top: 20px;
+  }
 }
