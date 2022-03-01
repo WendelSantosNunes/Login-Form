@@ -185,6 +185,10 @@ form div {
   letter-spacing: 1.5%;
 }
 
+#login:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1070px) {
   body main {
     grid-template-columns: 1fr;
