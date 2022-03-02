@@ -23,7 +23,6 @@
           <img src="./assets/logo.svg" alt="Logo" id="logo" />
         </div>
 
-        <!-- <div class="container"> -->
         <div id="menu">
           <div>
             <img src="./assets/log-in.svg" alt="Log-in" id="log-in" />
@@ -42,6 +41,7 @@
                 name="e-mail"
                 placeholder="Digite seu e-mail"
                 id="e-mail"
+                autocomplete="off"
               />
             </div>
 
@@ -54,13 +54,16 @@
                 name="password"
                 placeholder="Digite seu e-password"
                 id="password"
+                autocomplete="off"
               />
             </div>
 
             <div id="salve-remember">
-              <div>
-                <input type="checkbox" name="salve" id="salve" />
-                <label for="salve">lembre-me</label>
+              <div id="container">
+                <!-- <input type="checkbox" name="salve" id="salve" /> 
+                      <label for="salve">lembre-me</label> -->
+                <div id="checkbox"></div>
+                <p>lembre-me</p>
               </div>
               <a href="#">Esqueci minha senha</a>
             </div>
@@ -69,7 +72,6 @@
           </form>
           <a href="#">Não tem uma conta? <strong>Registre-se</strong></a>
         </div>
-        <!-- </div> -->
       </section>
 
       <section id="section2">
