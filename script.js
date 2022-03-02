@@ -1,5 +1,6 @@
 let div = document.querySelectorAll('[data-inputs]')
 let caminho = 'http://127.0.0.1:5500/'
+let checkbox = document.querySelector('#checkbox')
 
 function icon(item) {
   if (item.firstElementChild.src === caminho + 'assets/mail.svg') {
@@ -31,3 +32,18 @@ for (const item of div) {
     form(item)
   })
 }
+
+let img = document.createElement('img')
+img.src = './assets/check.svg'
+
+function salveData() {
+  if (checkbox.style.backgroundColor === 'rgb(255, 198, 50)') {
+    checkbox.style.backgroundColor = ''
+    checkbox.removeChild(img)
+  } else {
+    checkbox.style.backgroundColor = 'rgb(255, 198, 50)'
+    checkbox.appendChild(img)
+  }
+}
+
+checkbox.addEventListener('click', salveData)
