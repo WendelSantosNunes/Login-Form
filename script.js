@@ -15,7 +15,6 @@ function icon(item) {
 }
 
 function form(item) {
-  ''
   if (!item.classList.contains('data-input')) {
     item.classList.add('data-input')
     icon(item)
