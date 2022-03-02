@@ -49,7 +49,6 @@ main {
 
 #menu {
   max-width: 572px;
-  /* width: auto; */
   margin: auto;
   padding: 55px 119px;
   background-color: var(--form-background);
@@ -137,6 +136,10 @@ form div {
   width: 100%;
 }
 
+/* #e-mail:focus,
+#password:focus {
+} */
+
 .icon {
   max-width: 20px;
   margin: 10px;
@@ -158,8 +161,17 @@ form div {
   align-items: center;
 }
 
-#salve-remember div label {
-  padding-bottom: 0;
+#salve-remember div p {
+  color: #a9afb9;
+}
+
+#salve-remember div #checkbox {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  margin-right: 5px;
 }
 
 #salve-remember a {
@@ -167,17 +179,14 @@ form div {
   font-size: 14px;
 }
 
-#salve-remember div input {
-  border: none;
-  margin-right: 5px;
-}
-
 #login {
   width: 100%;
   padding: 12px 0;
   margin-bottom: 14px;
   background-color: var(--primary-color);
+
   border: none;
+  border-radius: 4px;
 
   font-size: 18px;
   font-weight: bold;
@@ -193,8 +202,6 @@ form div {
   body main {
     grid-template-columns: 1fr;
     height: 100vh;
-    /* display: flex;
-    justify-content: center; */
   }
 
   #section2 {
